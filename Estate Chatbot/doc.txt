@@ -1,0 +1,28 @@
+Estate Chatbot Documentation
+Overview
+The Estate Chatbot is a Python-based app for managing real estate data and user preferences. It includes user profile management, property data handling, and staff suggestions.
+
+Project Structure
+main.py: Core app logic and UI.
+user_context_db.py: Database operations for user profiles/preferences.
+data_prepare.py: Loads and cleans property data.
+Key Features
+User Profile Management:
+
+Update and display user profiles/preferences.
+Handled by update_user_info in main.py and update_user in user_context_db.py.
+Property Data Handling:
+
+Load and prepare property data from CSV.
+Managed by load_data in main.py, and data_prepare.py.
+Staff Suggestions:
+
+Staff can view user context and suggest properties.
+Implemented in create_frames (main.py).
+Data Flow
+Load Data: CSV data is processed via load_data in data_prepare.py.
+User Profiles: Fetched/updated via UserContextDatabase.
+UI Updates: User data displayed via update_user_info in main.py.
+Logging & Error Handling
+Logging: Logs saved to chatbot.log.
+Error Handling: Errors logged and shown via messagebox.showerror.
